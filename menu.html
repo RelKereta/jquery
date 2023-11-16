@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        img{max-width: 50%;max-height: 50%;}
+        div{text-align: center; width: 50%; margin-left: 25%;}
+        .card{margin-top: 5%;}
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function() {
+        $(".sate,.soto,.ayam,.nasi").css("display", "none");
+    });
+    $(document).ready(function(){
+        $("#p1").hover(function(){
+            $(".sate").toggle();
+        });
+    });
+    $(document).ready(function(){
+        $("#p2").hover(function(){
+            $(".soto").toggle();
+        });
+    });
+    $(document).ready(function(){
+        $("#p3").hover(function(){
+            $(".ayam").toggle();
+        });
+    });
+    $(document).ready(function(){
+        $("#p4").hover(function(){
+            $(".nasi").toggle();
+        });
+    });
+    </script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: #e3f2fd;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Home</a>
+          <a class="navbar-brand" href="gallery.html">Gallery</a>
+          <a class="navbar-brand" href="menu.html">Menu</a>
+          <a class="navbar-brand" href="faq.html">FAQ</a>
+        </div>
+      </nav>
+    <div class="card" style="background-color:lightgray">
+    <h1>Menu</h1>
+    <br>
+    <section id="p1">
+    <h3>Sate ......................... 20K</h3>
+    <img src="Sate.jpeg" class="sate">
+    <h6 class="sate">This sate consists of chicken meat marinated in sweet soy sauce and cooked on an open flame grill. It is then served with a spicy peanut or sweet soy sauce, sliced shallots and chopped chillies.</h6>
+    </section>
+    <br>
+    <section id="p2">
+    <h3>Soto Ayam.............. 15K</h3>
+    <img src="Soto.jpeg" class="soto">
+    <h6 class="soto">Soto ayam is a traditional Indonesian dish which uses ingredients such as chicken, lontong, noodles, and rice vermicelli. Soto ayam is popular in Singapore,[4] Malaysia[5] and Suriname. Turmeric is added as one of its main ingredients which makes the yellow chicken broth. It is one of the most popular variant of soto, a traditional soup commonly found in Indonesian cuisine. Besides chicken and vermicelli, it can also be served with hard-boiled eggs, slices of fried potatoes and Chinese celery leaves. Fried shallots are usually added as garnish. Coconut milk (santan) is also used as an additional ingredient.[6] Koya, a powder of mixed prawn crackers with fried garlic, or sambal is a common topping. Krupuk or emping is also a common topping.</h6>
+    </section>
+    <br>
+    <section id="p3">
+    <h3>Ayam Goreng ........ 10K</h3>
+    <img src="ayam.jpeg" class="ayam">
+    <h6 class="ayam">Ayam goreng is an Indonesian and dish consisting of chicken deep fried in oil.</h6>
+    </section>
+    <br>
+    <section id="p4">
+    <h3>Nasi Putih ............... 5K</h3>
+    <img src="nasi.jpg" class="nasi">
+    <h6 class="nasi">An aromatic “long-grain” rice where each grain is about four times as long as it is wide.</h6>
+    </section>
+    </div>
+    <br>
+</body>
+</html>

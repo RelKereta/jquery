@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        img{max-width: 100%;max-height: 100%;}
+        td{width: 30%}
+        div{text-align: center; width: 50%; margin-left: 25%;}
+        .card{margin-top: 5%;}
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".Animals").click(function(){
+                $(".Animal").fadeToggle("slow");
+                $(".Nature").fadeOut("slow");
+                $(".Place").fadeOut("slow");
+            });
+        });
+        $(document).ready(function(){
+            $(".Natures").click(function(){
+                $(".Nature").fadeToggle("slow");
+                $(".Animal").fadeOut("slow");
+                $(".Place").fadeOut("slow");
+            });
+        });
+        $(document).ready(function(){
+            $(".Places").click(function(){
+                $(".Place").fadeToggle("slow");
+                $(".Nature").fadeOut("slow");
+                $(".Animal").fadeOut("slow");
+            });
+        });
+        $(document).ready(function(){
+            $(".AllShow").click(function(){
+                $(".Animal,.Nature,.Place").fadeIn("slow");
+            });
+        });
+        $(document).ready(function(){
+            $(".AllHide").click(function(){
+                $(".Animal,.Nature,.Place").fadeOut("slow");
+            });
+        });
+    </script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: #e3f2fd;"   >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Home</a>
+          <a class="navbar-brand" href="gallery.html">Gallery</a>
+          <a class="navbar-brand" href="menu.html">Menu</a>
+          <a class="navbar-brand" href="faq.html">FAQ</a>
+        </div>
+      </nav>
+    <div class="card" style="background-color: lightgray;">
+    <button class="Animals">Animals</button>
+    <table>
+        <tr class="Animal">
+            <td><img src="animal1.jpeg"></td>
+            <td><img src="animal2.jpeg"></td>
+            <td><img src="Animal3.jpeg"></td>    
+    </tr>
+    </table>
+    <button class="Natures">Nature</button>
+    <table>
+        <tr class ="Nature">
+            <td><img src="download.jpeg"></td>
+            <td><img src="nature 2.jpeg"></td>
+            <td><img src="nature 3.jpeg"></td>
+        </tr>
+    </table>
+    <button class="Places">Places</button>
+    <table>
+        <tr class ="Place">
+            <td><img src="place1.jpeg"></td>
+            <td><img src="place2.jpeg"></td>
+            <td><img src="place3.jpeg"></td>
+        </tr>
+    </table>
+    <button class="AllShow">Show All</button>
+    <button class="AllHide">Hide All</button>
+    </div>
+</body>
+</html>
